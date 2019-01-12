@@ -1,0 +1,61 @@
+#logobluebox {
+    width: 180px;
+    height: 100px;
+    background-color: #2953ca;
+    position: absolute;
+    top: 0px;
+    left: 110px;
+}
+
+#logomaki {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 120px;
+}
+
+#logohirose {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    top: 40px;
+    left: 120px;
+}
+
+#menubuttons {
+    color: gold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    float: right;
+    margin-top: 60px;
+    margin-right: 100px;
+}
+
+#firstbreak {
+    line-height: 140px;
+}
+
+#aboutmetitle {
+    color: silver;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#profilepicture {
+    height: 200px;
+    width: 200px;
+}
+
+#biotext {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
