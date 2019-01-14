@@ -9,7 +9,7 @@ body {
 /* CONTAINER FOR MENU BAR AND LOGO */
 
 .containerMenuBarAndLogo {
-    max-width: 1000px;
+    max-width: 960px;
     margin: auto;
     padding: 40px;
     line-height: 1;
@@ -30,7 +30,7 @@ li {
     float: right;
 }
 
-li a {
+li a{
     display: block;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -82,16 +82,13 @@ li a:hover {
 }
 
 /* ---------------------------------------- */
-/* ABOUT ME BOX */
+/* ABOUT ME OUTER CONTAINER */
 
-.aboutMeBox {
-    max-width: 1000px;
-    margin: auto;
-    padding: -20px;
-    line-height: 1;
-    background-color: green;
-
-    
+.aboutMeOuterContainer {
+    max-width: 960px;
+    margin: -27px auto;
+    line-height: 2;
+    background-color: #a1a1a1;
 }
 
 .aboutMeTitle {
@@ -99,11 +96,25 @@ li a:hover {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 40px;
+    position: relative;
+    top: 5px;
+    left: -160px;
+}
+
+/* ---------------------------------------- */
+/* ABOUT ME INNER CONTAINER */
+
+.aboutMeInnerContainer {
+    padding: 0px 20px 0px 20px;
 }
 
 .profilePicture {
     height: 200px;
     width: 200px;
+    position: relative;
+    top: -20px;
+    float: left;
+    margin: 0px 20px 0px 0px;
 }
 
 .bioText {
@@ -111,4 +122,9 @@ li a:hover {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
     font-size: 20px;
+    text-align: justify;
+    position: relative;
+    top: -10px;
+    padding: 0px 0px 40px 0px;
+
 }
