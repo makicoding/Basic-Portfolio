@@ -1,0 +1,63 @@
+/* ---------------------------------------- */
+/* ABOUT ME OUTER CONTAINER */
+
+.aboutMeOuterContainer {
+    width: 958px;
+    background-color: #white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #a1a1a1;
+
+    margin: none;
+    
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-480px, 140px);
+}
+
+.aboutMeTitle {
+    color: silver;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+
+    margin: 20px 0px 20px 0px;
+    padding: none;
+    
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform: translate(-479px, 0px);
+}
+
+/* ---------------------------------------- */
+/* ABOUT ME INNER CONTAINER */
+
+.aboutMeInnerContainer {
+    margin: none;
+    padding: 0px 20px 0px 20px;
+}
+
+.profilePicture {
+    height: 200px;
+    width: 200px;
+    
+    position: relative;
+    float: left;
+    margin: 0px 20px 10px 0px;
+}
+
+.bioText {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5;
+    
+    position: relative;
+    top: -5px;
+    margin: 0px 0px 40px 0px;
+}
