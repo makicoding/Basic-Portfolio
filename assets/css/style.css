@@ -3,10 +3,13 @@
 body {
     margin: 0;
     padding: 0;
+
+    height: 2000px;
+
 }
 
 /* ---------------------------------------- */
-/* MENU BAR AND LOGO CONTAINER*/
+/* MENU BAR AND LOGO CONTAINER */
 
 .menuBarAndLogoContainer {
     max-width: 960px;
@@ -24,6 +27,13 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: #cecece;
+    width: 780px;
+
+    position: fixed;
+    left: 50%;
+    transform: translate(-300px, 0px);
+
+    z-index: 1;
 }
 
 .menuLi {
@@ -49,69 +59,95 @@ body {
 }
 
 /* ---------------------------------------- */
-/* MORE RESEARCH NEEDED ON THIS PART */
-/* HIDDEN LOGO BUTTON*/
-/*
-.hiddenLogoButton {
+/* LOGO BUTTON */
+
+.logoButton {
     width: 180px;
     height: 100px;
-    background-color: white;
-    font-size: 100px;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
     color: white;
-    text-align: center;
+    background-color:#2953ca;
+    text-align: left;
     text-decoration: none;
-    position: relative;
-    top: -100px;
-    float: left;
+    border-style: none;
+
+    padding: 10px 0px 0px 10px;
+
+    cursor: pointer;
+    outline: 0;
+  
+    position: fixed;
+    left: 50%;
+    transform: translate(-480px, 0px);
+    top: 20px;
+
+    float: left;  
+
+    opacity: 1;
     z-index: 1;
 }
-*/
+/* The outline: 0 in the above code removes the blue outline for the button when the button is clicked */
+
+.logoButton:hover {
+    background-color: #2953ca;
+}
+/* Change background-color in above code for .logoButton:hover to change the button color when a mouse hovers over it */
+
+.logoButton:active {
+    background-color: #2953ca;
+}
+/* Change background-color in above code for .logoButton:hover
+to change the button color when a mouse clicks on it */
 
 /* ---------------------------------------- */
-/* MAKI HIROSE LOGO */
+/* MAKI HIROSE TEXT */
 
-.logoBlueBox {
-    width: 180px;
-    height: 100px;
-    background-color: #2953ca;
-    position: relative;
-    top: -100px;
-    left: 0px;
-    float: left;
+.logoMaki a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+
+    position: fixed;
+    left: 50%;
+    transform: translate(-470px, 0px);
+    top: 55px;
     z-index: 2;
 }
 
-.logoMaki {
+.logoHirose a{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 30px;
-    position: relative;
-    top: 15px;
-    left: 10px;
-}
+    text-decoration: none;
 
-.logoHirose {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    position: relative;
-    top: -10px;
-    left: 10px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-470px, 0px);
+    top: 85px;
+    z-index: 2;
 }
 
 /* ---------------------------------------- */
 /* ABOUT ME OUTER CONTAINER */
 
 .aboutMeOuterContainer {
-    max-width: 958px;
-    margin: 7px auto;
+    width: 958px;
     background-color: #white;
     border-width: 1px;
     border-style: solid;
     border-color: #a1a1a1;
+
+    margin: none;
+    
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-480px, 140px);
 }
 
 .aboutMeTitle {
@@ -119,23 +155,30 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 40px;
+    text-align: center;
+
+    margin: 20px 0px 20px 0px;
+    padding: none;
+    
     position: relative;
-    top: -1px;
-    left: -160px;
+    top: 0px;
+    left: 50%;
+    transform: translate(-479px, 0px);
 }
 
 /* ---------------------------------------- */
 /* ABOUT ME INNER CONTAINER */
 
 .aboutMeInnerContainer {
-    padding: 10px 20px 0px 20px;
+    margin: none;
+    padding: 0px 20px 0px 20px;
 }
 
 .profilePicture {
     height: 200px;
     width: 200px;
+    
     position: relative;
-    top: -20px;
     float: left;
     margin: 0px 20px 10px 0px;
 }
@@ -147,15 +190,20 @@ body {
     font-size: 18px;
     text-align: justify;
     line-height: 1.5;
+    
     position: relative;
-    top: -42px;
-    padding: 0px 0px 20px 0px;
+    top: -5px;
+    margin: 0px 0px 40px 0px;
 }
 
 /* ---------------------------------------- */
 /* FIRST FOOTER */
 
 .firstFooter {
+    background-color: #2953ca;
+    color: white;
+    text-align: center;
+
     position: fixed;
     left: 0;
     bottom: 80px;
@@ -165,15 +213,14 @@ body {
     left: 50%;
     transform: translate(-50%, 0);
     */
-    background-color: #2953ca;
-    color: white;
-    text-align: center;
 }
 
 /* ---------------------------------------- */
 /* SECOND FOOTER CONTAINER */
 
 .sFooter {
+    background-color: #cecece;
+
     position: fixed;
     left: 0;
     bottom: 0px;
@@ -183,69 +230,66 @@ body {
     left: 50%;
     transform: translate(-50%, 0);
     */
-    background-color: #cecece;
-    color: black;
-    text-align: center;
 }
 
 /* ---------------------------------------- */
 /* TEL BUTTON */
 
-.sFooterUl {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #cecece;
-}
-
-.sFooterLi1 {
-    float: none;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 15px);
-}
-
-.sFooterLi1 a {
-    display: block;
-    color: white;
+.sFooterButton1 {
+    height: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 18px;
+    color:white;
+    background: #cecece;
     text-align: center;
-    padding: 0px 30px;
     text-decoration: none;
+    border-style: none;
+
+    cursor: pointer;
+    outline: 0;
+
+    padding: 0;
+    margin: 0;
+
+    position: fixed;
+    left: 50%;
+    transform: translate(-67.8205px, 10px);
 }
 
 /* Change link color on hover of Tel Button */
 
-.sFooterLi1 a:hover {
+.sFooterButton1:hover {
     color: #2953ca;
 }
 
 /* ---------------------------------------- */
 /* EMAIL BUTTON */
 
-.sFooterLi2 {
-    float: none;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 40px);
-}
-
-.sFooterLi2 a {
-    display: block;
-    color: white;
+.sFooterButton2 {
+    height: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 18px;
+    color: white;
+    background: none;
     text-align: center;
-    padding: 0px 30px;
     text-decoration: none;
+    border-style: none;
+
+    cursor: pointer;
+    outline: 0;
+
+    padding: 0;
+    margin: 0;
+
+    position: fixed;
+    left: 50%;
+    transform: translate(-123.3205px, 40px);
 }
 
 /* Change link color on hover of Email Button */
 
-.sFooterLi2 a:hover {
+.sFooterButton2:hover {
     color: #2953ca;
 }
