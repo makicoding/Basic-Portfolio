@@ -4,56 +4,18 @@
 body {
     margin: 0;
     padding: 0;
+    height: 2000px;
 }
 
 /* ---------------------------------------- */
-/* MENU BAR AND LOGO CONTAINER */
+/* LOGO AND MENU BAR CONTAINER */
 
-.menuBarAndLogoContainer {
-    max-width: 960px;
-    margin: auto;
-    padding: 20px;
-    line-height: 1;
-}
-
-/* ---------------------------------------- */
-/* MENU BAR */
-
-.menuUl {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #cecece;
-    width: 780px;
-
+.logoAndMenuBarContainer {
+    width: 960px;
+    height: 100px;
+    
     position: fixed;
-    left: 50%;
-    transform: translate(-300px, 0px);
-
-    z-index: 1;
-}
-
-.menuLi {
-    float: right;
-}
-
-.menuLi a {
-    display: block;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    text-align: center;
-    padding: 41px 30px;
-    text-decoration: none;
-}
-
-/* Change link color on hover */
-
-.menuLi a:hover {
-    background-color: #191919;
-    color: white;
+    top: 20px;
 }
 
 /* ---------------------------------------- */
@@ -79,13 +41,9 @@ body {
   
     position: fixed;
     left: 50%;
-    transform: translate(-480px, 0px);
-    top: 20px;
-
-    float: left;  
+    transform: translate(-480px, 0px);  
 
     opacity: 1;
-    z-index: 1;
 }
 /* 
 The outline: 0 in the above code removes the 
@@ -135,7 +93,6 @@ ABOVE
     left: 50%;
     transform: translate(-470px, 0px);
     top: 55px;
-    z-index: 2;
 }
 
 .logoHirose a{
@@ -149,9 +106,49 @@ ABOVE
     left: 50%;
     transform: translate(-470px, 0px);
     top: 85px;
-    z-index: 2;
 }
 */
+
+/* ---------------------------------------- */
+/* MENU BAR */
+
+.menuUl {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #cecece;
+    
+    width: 780px;
+    height: 100px;
+
+    padding: 0;
+    margin: 0;
+
+    position: fixed;
+    left: 50%;
+    transform: translate(-300px, 0px);
+}
+
+.menuLi {
+    float: right;
+}
+
+.menuLi a {
+    display: block;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    padding: 41px 30px;
+    text-decoration: none;
+}
+
+/* Change link color on hover */
+
+.menuLi a:hover {
+    background-color: #191919;
+    color: white;
+}
 
 /* ---------------------------------------- */
 /* FIRST FOOTER */
@@ -163,7 +160,7 @@ ABOVE
 
     position: fixed;
     left: 0;
-    bottom: 80px;
+    bottom: 100px;
     width: 100%;
     height: 10px;
 
@@ -185,7 +182,7 @@ ABOVE
     left: 0;
     bottom: 0px;
     width: 100%;
-    height: 80px;
+    height: 100px;
     /* 
     This part is if I want to customize the 
     width and positioning of Second Footer later.
@@ -195,40 +192,9 @@ ABOVE
 }
 
 /* ---------------------------------------- */
-/* TEL BUTTON */
-
-.sFooterButton1 {
-    height: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    color:white;
-    background: #cecece;
-    text-align: center;
-    text-decoration: none;
-    border-style: none;
-
-    cursor: pointer;
-    outline: 0;
-
-    padding: 0;
-    margin: 0;
-
-    position: fixed;
-    left: 50%;
-    transform: translate(-67.8205px, 10px);
-}
-
-/* Change link color on hover of Tel Button */
-
-.sFooterButton1:hover {
-    color: #2953ca;
-}
-
-/* ---------------------------------------- */
 /* EMAIL BUTTON */
 
-.sFooterButton2 {
+.sFooterButton1 {
     height: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
@@ -247,11 +213,84 @@ ABOVE
 
     position: fixed;
     left: 50%;
-    transform: translate(-123.3205px, 40px);
+    transform: translate(-123.3205px, 10px);
 }
 
 /* Change link color on hover of Email Button */
 
+.sFooterButton1:hover {
+    color: #2953ca;
+}
+
+/* ---------------------------------------- */
+/* TEL BUTTON */
+
+.sFooterButton2 {
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color:white;
+    background: #cecece;
+    text-align: center;
+    text-decoration: none;
+    border-style: none;
+
+    cursor: pointer;
+    outline: 0;
+
+    padding: 0;
+    margin: 0;
+
+    position: fixed;
+    left: 50%;
+    transform: translate(-67.8205px, 35px);
+}
+
+/* Change link color on hover of Tel Button */
+
 .sFooterButton2:hover {
     color: #2953ca;
+}
+
+/* ---------------------------------------- */
+/* LINKEDIN BUTTON */
+
+.sFooterButton3_Outer {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+
+    cursor: pointer;
+
+    position: fixed;
+    left: 50%;
+    transform: translate(-32px, 64px);
+}
+
+.sFooterButton3_Inner {
+    width: 24px;
+    height: 24px;
+}
+
+/* ---------------------------------------- */
+/* GITHUB BUTTON */
+
+.sFooterButton4_Outer {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+
+    cursor: pointer;
+
+    position: fixed;
+    left: 50%;
+    transform: translate(8px, 64px);
+}
+
+.sFooterButton4_Inner {
+    width: 24px;
+    height: 24px;
 }
