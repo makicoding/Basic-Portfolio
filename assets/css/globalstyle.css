@@ -2,9 +2,34 @@
 /* BODY OF SITE */
 
 body {
-    margin: 0;
     padding: 0;
+    margin: 0;
+
     height: 2000px;
+    /* 
+    Height of the body is determined here
+    so that the user can scroll up the page
+    to see just the background image. This
+    is a secret feature of website, some
+    users may notice the function, others
+    will not.
+    */
+}
+
+/* ---------------------------------------- */
+/* BACKGROUND IMAGE CONTAINER */
+
+.backgroundImage {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    z-index: -2;
 }
 
 /* ---------------------------------------- */
@@ -117,8 +142,12 @@ ABOVE
     overflow: hidden;
     background-color: #cecece;
     
-    width: 780px;
-    height: 100px;
+    width: 778px;
+    height: 98px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #a1a1a1;
 
     padding: 0;
     margin: 0;
@@ -231,7 +260,7 @@ ABOVE
     font-weight: 700;
     font-size: 18px;
     color:white;
-    background: #cecece;
+    background: none;
     text-align: center;
     text-decoration: none;
     border-style: none;
@@ -272,6 +301,8 @@ ABOVE
 .sFooterButton3_Inner {
     width: 24px;
     height: 24px;
+    padding: 0;
+    margin: 0;
 }
 
 /* ---------------------------------------- */
@@ -293,4 +324,6 @@ ABOVE
 .sFooterButton4_Inner {
     width: 24px;
     height: 24px;
+    padding: 0;
+    margin: 0;
 }
