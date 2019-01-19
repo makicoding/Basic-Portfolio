@@ -1,20 +1,4 @@
-/* ---------------------------------------- */
-/* BODY OF SITE */
-
-body {
-    padding: 0;
-    margin: 0;
-
-    height: 2000px;
-    /* 
-    Height of the body is determined here
-    so that the user can scroll up the page
-    to see just the background image. This
-    is a secret feature of website, some
-    users may notice the function, others
-    will not.
-    */
-}
+/* FIXED POSITION ITEMS ON THIS CSS */
 
 /* ---------------------------------------- */
 /* BACKGROUND IMAGE CONTAINER */
@@ -29,7 +13,7 @@ body {
     top: 0px;
     left: 0px;
 
-    z-index: -2;
+    z-index: -1;
 }
 
 /* ---------------------------------------- */
@@ -133,7 +117,7 @@ color when a mouse clicks on it.
     font-weight: 700;
     font-size: 18px;
     text-align: center;
-    padding: 41px 30px;
+    padding: 40px 30px 40px 30px;
     text-decoration: none;
 }
 
