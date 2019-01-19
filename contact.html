@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Maki Hirose - Full Stack Web Developer - NYC</title>
+        
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="assets/css/globalstyle.css">
+        <link rel="stylesheet" href="assets/css/contactstyle.css">
+</head>
+<body> 
+    <!---------------------------------------->
+    <!--
+    THIS SECTION IS FOR THE RELATIVE AND ABSOLUTE
+    POSITION ITEMS OF THE WEBSITE
+    -->    
+
+    <!--This is the Contact Outer Container-->
+    <div class="contactOuterContainer">
+
+        <!--This is the Contact Title-->
+        <h1 class="contactTitle">CONTACT</h1>
+
+        <!--
+        This is the Contact Inner Container 1
+        -->
+        <div class="contactInnerContainer1">
+        Add Email, Phone, Social Media links here.
+        </div>
+
+        <!--
+        This is the Contact Inner Container 2
+        which is the Contact Form
+        -->    
+        <div class="contactInnerContainer2">   
+            <form action="action_page.php">
+                
+                <!--This is for Full Name Input Box-->
+                <label for="fullName">Name</label>
+                <input type="text" id="fullName" name="firstAndLastName" placeholder="First & Last Name">    
+                
+                <!--This is the Email Input Box-->
+                <label for="emailAddress">Email</label>
+                <input type="text" id="emailAddress" name="email" placeholder="example@gmail.com">
+
+                <!--This is the Message Input Box-->
+                <label for="writeMessage">Message</label>
+                <textarea id="writeMessage" name="message"></textarea>
+            
+                <!--This is the Submit Button-->
+                <input type="submit" value="Submit">
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!---------------------------------------->
+    <!--
+    THIS SECTION IS FOR THE FIXED POSITION ITEMS 
+    OF THE WEBSITE
+    -->
+
+    <!--This is the Container for the Background Image-->
+    <img class="backgroundImage" src="assets/images/sRGB_PhotoshopQuality8/sRGB_3000px_170424_K_01_0331_HIRES1.jpg" alt="Background">
+
+    <!--This is the Container for the Logo and Menu Bar-->
+    <div class="logoAndMenuBarContainer">
+    
+        <!--This is the Logo Button-->
+        <form action="index.html">
+        <button class="logoButton">MAKI HIROSE</button>
+        </form>
+        
+        <!--This is the Menu Bar-->
+        <div>
+        <ul class="menuUl">
+            <li class="menuLi"><a href="contact.html">CONTACT</a></li>
+            <li class="menuLi"><a href="assets/resume/MakiHiroseResume.pdf" target="_blank">RÉSUMÉ</a></li>
+            <li class="menuLi"><a href="portfolio.html">PORTFOLIO</a></li>
+            <li class="menuLi"><a href="index.html">ABOUT</a></li>    
+        </ul>
+        </div>
+
+    </div>
+
+    <!--This is the First Footer-->
+    <div class="firstFooter">
+    </div>
+
+    <!--This is the Second Footer Container-->
+    <div class="sFooter">
+
+        <!--This is the Email Button-->
+        <form action="mailto:makidigital.sync@gmail.com">
+        <button class="sFooterButton1">makidigital.sync@gmail.com</button>
+        </form>
+        
+        <!--This is the Tel Button-->
+        <form action="tel:+13476151458">
+        <button class="sFooterButton2">+1.347.615.1458</button>    
+        </form>
+
+        <!--This is the Footer LinkedIn Button-->
+        <form action="https://www.linkedin.com/in/makihirose" target="_blank">
+        <button class="sFooterButton3_Outer">
+            <img class="sFooterButton3_Inner" src="assets/icons/icon03.png" alt="LinkedIn">
+        </button>
+        </form>
+
+        <!--This is Footer GitHub Button-->
+        <form action="https://github.com/makicoding" target="_blank">
+        <button class="sFooterButton4_Outer">
+            <img class="sFooterButton4_Inner"
+            src="assets/icons/icon04.png" alt="GitHub">
+        </button>
+        </form>
+
+    </div>
+
+</body>
+</html>
